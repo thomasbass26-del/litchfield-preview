@@ -158,11 +158,54 @@ form.request.is-sent .sent{display:block}
 .advisor .label{display:block}
 
 /* ---------- a note to the brokerage; not part of the public page ---------- */
-.brief{background:var(--sheet);border:1px dashed #B9BEB9;padding:clamp(22px,3vw,36px);margin-top:var(--air)}
+.brief{background:var(--sheet);border:1px dashed #B9BEB9;padding:clamp(22px,3vw,36px);margin-block:var(--air)}
 .brief h2{font-size:1.45rem;margin-bottom:.5em}
 .brief ul{columns:2;column-gap:48px;margin:14px 0 0;padding-left:1.1em;font-size:.98rem}
 .brief li{break-inside:avoid;margin-bottom:.4em}
 @media(max-width:760px){.brief ul{columns:1}}
+
+/* ==============================================================
+   Version 3, 9-21-26: the brokerage home page sets the pattern.
+   Everything below was added for it and is shared by every page.
+   ============================================================== */
+
+/* ---------- the opening photograph: edge to edge, nothing on top of it ---------- */
+.hero{margin:0}
+.hero img{width:100%;height:min(76vh,780px);min-height:320px;object-fit:cover;object-position:center 42%;display:block}
+.hero figcaption{max-width:var(--page);margin:12px auto 0;padding-inline:var(--gutter);text-align:right;font-style:italic;font-size:.92rem;color:var(--soft)}
+
+/* ---------- the opening statement ---------- */
+.opening{padding-block:clamp(44px,6.5vw,96px) clamp(48px,7vw,104px)}
+.opening h1{font-size:clamp(2.35rem,5.4vw,4.4rem);letter-spacing:-.008em;max-width:17ch}
+.opening .standfirst{max-width:52ch;margin-top:22px}
+
+/* ---------- properties: photographs first, facts beneath ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,2.6vw,40px);margin-top:clamp(28px,3.6vw,48px)}
+@media(max-width:920px){.cards{grid-template-columns:1fr;gap:44px}}
+.card{margin:0}
+.card a.shot{display:block}
+.card img{width:100%;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--hair);background:var(--sheet)}
+.card img.fit{object-fit:contain}
+.card .label{display:block;margin:16px 0 4px}
+.card h3{font-size:1.5rem;line-height:1.18}
+.card .price{font-family:var(--display);font-size:1.2rem;margin:8px 0 6px;max-width:none}
+.card .facts{font-family:var(--ui);font-size:.88rem;color:var(--soft);line-height:1.55;margin:0 0 12px;max-width:none}
+.card p.go{margin:0;font-size:.98rem}
+
+/* ---------- a row of quiet links ---------- */
+.linkrow{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:clamp(28px,3.4vw,44px);font-size:1rem}
+
+/* ---------- an index: names on hairlines ---------- */
+.index{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
+.index li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:13px 0;border-bottom:1px solid var(--hair)}
+.index b{font-family:var(--display);font-weight:400;font-size:1.22rem;line-height:1.25}
+.index .label{display:block;margin-top:2px}
+.index a{font-size:.95rem;white-space:nowrap}
+
+/* ---------- the office ---------- */
+.office{font-style:normal;line-height:1.6;margin:0 0 1.2em}
+.office b{display:block;font-family:var(--display);font-weight:400;font-size:1.3rem;margin-bottom:4px}
+.office a{white-space:nowrap}
 
 /* ---------- foot ---------- */
 .foot{border-top:1px solid var(--hair);padding-block:54px 60px;font-family:var(--ui);font-size:.84rem;color:var(--soft);line-height:1.65}
