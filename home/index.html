@@ -14,6 +14,8 @@
   DESIGN PREVIEW of a brokerage home page, built 9-21-26 for the 9-23-26 meeting with The Litchfield Company.
   This page sets the pattern the other three follow: masthead, photograph, statement, bands on hairlines,
   one tinted band where the visitor is invited to act, note to the brokerage, foot.
+  The photographs at the top change on their own: six of the firm's listings, a slow crossfade every seven
+  seconds, the only motion on any page. ?slide=3 opens on the third; ?still keeps it from moving.
   Facts, all read from thelitchfieldcompany.com on 9-21-26:
     since 1956; home office 14240 Ocean Highway, Pawleys Island, 843-237-4000; the areas served;
     affiliate of Christie's International Real Estate and of Leading Real Estate Companies of the World;
@@ -34,6 +36,7 @@
       <a href="#properties">Properties</a>
       <a href="#communities">Communities</a>
       <a href="#selling">Selling</a>
+      <a href="#magazine">Magazine</a>
       <a href="#advisors">Advisors</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -41,11 +44,36 @@
 </header>
 
 <main>
-  <figure class="hero">
-    <img src="../img/home/marshhen-1.jpg" width="3072" height="2304"
-         alt="Dusk over the salt marsh at Litchfield Beach: a creek winds through the grass toward the ocean, seen from above a house on the marsh's edge.">
-    <figcaption>Litchfield Beach at dusk, from above <a href="#marsh-hen">75 Marsh Hen Drive</a>.</figcaption>
-  </figure>
+  <section class="hero" aria-roledescription="carousel" aria-label="Photographs of selected properties">
+    <div class="slides">
+    <figure class="slide is-on" data-cap="75 Marsh Hen Drive, Litchfield Beach. $3,100,000." data-href="https://www.thelitchfieldcompany.com/property/33-2618762-75-marsh-hen-dr-pawleys-island-SC-29585">
+      <img src="../img/home/marshhen-1.jpg" alt="Dusk over the salt marsh at Litchfield Beach: a creek winds through the grass toward the ocean, seen from above 75 Marsh Hen Drive on the marsh's edge." style="object-position:center 42%">
+    </figure>
+    <figure class="slide" data-cap="1229 Norris Drive, The Peninsula at Inlet Point. $5,999,990." data-href="https://www.thelitchfieldcompany.com/property/33-2615325-1229-norris-dr-pawleys-island-SC-29585">
+      <img src="../img/home/norris-1.jpg" alt="1229 Norris Drive, an oceanfront house at Inlet Point with white railed porches on two floors and the Atlantic behind it." style="object-position:center 48%" loading="lazy">
+    </figure>
+    <figure class="slide" data-cap="102 Summer Haven Court, DeBordieu. $3,495,000." data-href="https://www.thelitchfieldcompany.com/property/33-2623302-102-summer-haven-ct-a-4-georgetown-SC-29440">
+      <img src="../img/home/summerhaven-1.jpg" alt="102 Summer Haven Court at DeBordieu from the air: a house among palms and dunes with the ocean beyond." style="object-position:center 50%" loading="lazy">
+    </figure>
+    <figure class="slide" data-cap="2254 South Waccamaw Drive, Inlet Harbour, Garden City Beach. $3,995,000." data-href="https://www.thelitchfieldcompany.com/property/33-2619056-2254-s-waccamaw-dr-garden-city-beach-SC-29576">
+      <img src="../img/home/waccamaw-1.jpg" alt="2254 South Waccamaw Drive in Inlet Harbour: a three-story house with a red roof and white railed porches, set among palms." style="object-position:center 55%" loading="lazy">
+    </figure>
+    <figure class="slide" data-cap="4853 Highway 17, Murrells Inlet. $3,299,000." data-href="https://www.thelitchfieldcompany.com/property/33-2522678-4853-highway-17-murrells-inlet-SC-29576">
+      <img src="../img/home/hwy17-1.jpg" alt="4853 Highway 17 in Murrells Inlet at dusk: a gray two-story house under live oaks at the end of a wide sand drive." style="object-position:center 50%" loading="lazy">
+    </figure>
+    <figure class="slide" data-cap="285 Brickwell Lane, The Reserve. $2,950,000." data-href="https://www.thelitchfieldcompany.com/property/33-2622859-285-brickwell-ln-pawleys-island-SC-29585">
+      <img src="../img/home/brickwell-1.jpg" alt="285 Brickwell Lane in The Reserve at dusk: a white columned house set back under live oaks at the end of a sand drive." style="object-position:center 40%" loading="lazy">
+    </figure>
+    </div>
+    <div class="hero-bar wrap">
+      <div class="hero-nav">
+        <button type="button" class="hero-btn" data-go="-1" aria-label="Previous photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <span class="hero-count label"><span data-n>1</span> of 6</span>
+        <button type="button" class="hero-btn" data-go="1" aria-label="Next photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <p class="hero-cap"><a data-cap href="https://www.thelitchfieldcompany.com/property/33-2618762-75-marsh-hen-dr-pawleys-island-SC-29585">75 Marsh Hen Drive, Litchfield Beach. $3,100,000.</a></p>
+    </div>
+  </section>
 
   <section class="opening">
     <div class="wrap">
@@ -75,15 +103,14 @@
           <p class="go"><a href="../listing/index.html">View the property and request the portfolio</a></p>
         </article>
         <article class="card">
-          <a class="shot" href="https://www.thelitchfieldcompany.com/property/33-2622859-285-brickwell-ln-pawleys-island-SC-29585"><img src="../img/home/brickwell-1.jpg" alt="A white columned house at dusk, set back under live oaks at the end of a sand drive in The Reserve." loading="lazy"></a>
-          <span class="label">The Reserve, Pawleys Island</span>
-          <h3>285 Brickwell Lane</h3>
-          <p class="price">$2,950,000</p>
-          <p class="facts">On the pond. Five bedrooms, five full baths and one half, 6,446 sq ft on 1.94 acres.</p>
-          <p class="go"><a href="https://www.thelitchfieldcompany.com/property/33-2622859-285-brickwell-ln-pawleys-island-SC-29585">View the property</a></p>
+          <a class="shot" href="https://www.thelitchfieldcompany.com/property/33-2522678-4853-highway-17-murrells-inlet-SC-29576"><img src="../img/home/hwy17-1.jpg" alt="A gray two-story house at dusk under live oaks, at the end of a wide sand drive in Murrells Inlet." loading="lazy"></a>
+          <span class="label">Murrells Inlet</span>
+          <h3>4853 Highway 17</h3>
+          <p class="price">$3,299,000</p>
+          <p class="facts">On the creek, with dock access. Five bedrooms, five full baths and two half, 4,248 sq ft on 0.62 acres.</p>
+          <p class="go"><a href="https://www.thelitchfieldcompany.com/property/33-2522678-4853-highway-17-murrells-inlet-SC-29576">View the property</a></p>
         </article>
       </div>
-      <p class="footnote" id="marsh-hen">The photograph at the top of the page is 75 Marsh Hen Drive in Litchfield Beach, on the creek: seven bedrooms, five baths, 6,078 sq ft, offered at $3,100,000. <a href="https://www.thelitchfieldcompany.com/property/33-2618762-75-marsh-hen-dr-pawleys-island-SC-29585">View the property.</a></p>
       <div class="linkrow">
         <a href="https://www.thelitchfieldcompany.com/index.php?showagency=1">All of the firm's listings</a>
         <a href="https://www.thelitchfieldcompany.com/index.php?showagency=1&amp;rtype=map">Search the whole market</a>
@@ -95,22 +122,30 @@
     <div class="wrap two even">
       <div>
         <h2>Communities</h2>
-        <p>The firm's home ground is the Waccamaw Neck: the strip of beach, marsh, and river land between Murrells Inlet and Georgetown. Each name here opens what is for sale there today.</p>
+        <p>The firm works the coast from Georgetown to Myrtle Beach. Each name here opens what is for sale there today.</p>
         <figure class="plate" style="margin-top:30px">
           <img src="../img/listing/vanderbilt-10.jpg" alt="Aerial view of the ocean side clubhouse, pool, and courts at Prince George, with the beach and the Atlantic beyond the trees." loading="lazy" style="aspect-ratio:4/3;object-fit:cover">
           <figcaption>Prince George, ocean side.</figcaption>
         </figure>
       </div>
-      <ul class="index">
-        <li><div><b>DeBordieu Colony</b><span class="label">Georgetown</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=DeBordieu%20Colony&amp;areas%5B%5D=neighborhood:debordieu%20colony:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-        <li><div><b>Prince George</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Prince%20George&amp;areas%5B%5D=neighborhood:prince%20george%20ocean:sc&amp;areas%5B%5D=neighborhood:prince%20george%20river:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-        <li><div><b>Pawleys Plantation</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Pawleys%20Plantation&amp;areas%5B%5D=neighborhood:pawleys%20plantation:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-        <li><div><b>The Reserve</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=The%20Reserve&amp;areas%5B%5D=neighborhood:the%20reserve:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-        <li><div><b>Litchfield By The Sea</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Litchfield%20By%20The%20Sea&amp;areas%5B%5D=neighborhood:litchfield%20by%20the%20sea:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-        <li><div><b>Litchfield Plantation</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Litchfield%20Plantation&amp;areas%5B%5D=neighborhood:litchfield%20plantation:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-        <li><div><b>Willbrook Plantation</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Willbrook%20Plantation&amp;areas%5B%5D=neighborhood:willbrook%20plantation:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-        <li><div><b>Wachesaw Plantation</b><span class="label">Murrells Inlet</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Wachesaw%20Plantation&amp;areas%5B%5D=neighborhood:wachesaw%20plantation:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
-      </ul>
+      <div>
+        <p class="label grp">Pawleys Island and Georgetown</p>
+        <ul class="index">
+          <li><div><b>DeBordieu Colony</b><span class="label">Georgetown</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=DeBordieu%20Colony&amp;areas%5B%5D=neighborhood:debordieu%20colony:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>Prince George</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Prince%20George&amp;areas%5B%5D=neighborhood:prince%20george%20ocean:sc&amp;areas%5B%5D=neighborhood:prince%20george%20river:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>Pawleys Plantation</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Pawleys%20Plantation&amp;areas%5B%5D=neighborhood:pawleys%20plantation:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>The Reserve</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=The%20Reserve&amp;areas%5B%5D=neighborhood:the%20reserve:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>Litchfield By The Sea</b><span class="label">Pawleys Island</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Litchfield%20By%20The%20Sea&amp;areas%5B%5D=neighborhood:litchfield%20by%20the%20sea:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+        </ul>
+        <p class="label grp">Murrells Inlet and Myrtle Beach</p>
+        <ul class="index">
+          <li><div><b>Wachesaw Plantation</b><span class="label">Murrells Inlet</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Wachesaw%20Plantation&amp;areas%5B%5D=neighborhood:wachesaw%20plantation:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>Prince Creek</b><span class="label">Murrells Inlet</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Prince%20Creek&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20highwood:sc&amp;areas%5B%5D=neighborhood:johns%20bay%20%40%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:palm%20bay%20at%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20linksbrook:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20willow%20bay:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20laurel%20bay:sc&amp;areas%5B%5D=neighborhood:stonegate%20at%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:waverly%20bay%20-%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:seasons%20at%20prince%20creek%20west:sc&amp;areas%5B%5D=neighborhood:creek%20harbour%20-%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20west%20-%20creekhaven:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20bellwood%20landing:sc&amp;areas%5B%5D=neighborhood:cold%20stream%20cove%20-%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:johns%20bay%20south%20at%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20shallow%20creek%20bay:sc&amp;areas%5B%5D=neighborhood:wilderness%20pointe%20at%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:champions%20village%20at%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:course%20club%20villas%20at%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:charles%20towne%20bays%20of%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20collins%20creek%20landing:sc&amp;areas%5B%5D=neighborhood:collins%20creek%20landing%20-%20prince%20creek:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20longwood%20bluffs%20-%20detached:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-%20the%20garden%20homes%20at%20stonegate:sc&amp;areas%5B%5D=neighborhood:prince%20creek%20-longwood%20bluffs-%20semi%20detached:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>Grande Dunes</b><span class="label">Myrtle Beach</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Grande%20Dunes&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20cadiz:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20calais:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20milano:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20palermo:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20seville:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20del%20webb:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20cascadia:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20the%20cape:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20promenade:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20islecrest:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20beach%20view:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20marina%20inn:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20bal%20harbor:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20siena%20park:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20living%20dunes:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20members%20club:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20north%20village:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20cipriana%20park:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20villa%20venezia:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20capri%20village:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20vista%20del%20mar:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20waterside%20edge:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20riviera%20village:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20tuscany%20village:sc&amp;areas%5B%5D=neighborhood:grande%20dunes%20-%20waterside%20pointe:sc&amp;areas%5B%5D=neighborhood:grande%20dunes-members%20club%20enclave:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>The Dunes Club</b><span class="label">Myrtle Beach</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=The%20Dunes%20Club&amp;areas%5B%5D=neighborhood:the%20dunes%20club:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+          <li><div><b>Waterway Palms Plantation</b><span class="label">Myrtle Beach</span></div><a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=Waterway%20Palms%20Plantation&amp;areas%5B%5D=neighborhood:waterway%20palms%20plantation:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">For sale</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -118,11 +153,23 @@
     <div class="wrap two">
       <h2>Selling with the firm</h2>
       <div>
-        <p>A property offered here is represented under both names at the top of this page. The Litchfield Company has worked this coast since 1956. It is an affiliate of Christie's International Real Estate and of Leading Real Estate Companies of the World, and it publishes its own magazine, Litchfield Style.</p>
+        <p>A property offered here is represented under both names at the top of this page. The Litchfield Company has worked this coast since 1956. It is an affiliate of Christie's International Real Estate and of Leading Real Estate Companies of the World.</p>
         <div class="linkrow" style="margin-top:6px">
           <a href="https://www.thelitchfieldcompany.com/seller/valuation/">Ask for a valuation</a>
           <a href="https://www.thelitchfieldcompany.com/market-report.php">Market reports</a>
-          <a href="https://www.yumpu.com/en/document/read/71257290/2026-litchfield-style-magazine">Litchfield Style, 2026</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="magazine">
+    <div class="wrap two">
+      <h2>Litchfield Style</h2>
+      <div>
+        <p>The firm's own magazine, published once a year. The 2026 edition runs 48 pages: features on Hobcaw Barony, Brookgreen Gardens, and the Hammock Coast, and a newcomer's guide to licenses and registration, schools, utilities, taxes, and health care.</p>
+        <div class="linkrow" style="margin-top:6px">
+          <a href="https://www.yumpu.com/en/document/read/71257290/2026-litchfield-style-magazine">Read the 2026 edition</a>
+          <a href="#contact">Request a printed copy</a>
         </div>
       </div>
     </div>
@@ -140,7 +187,9 @@
           <a href="tel:+18432374000">843-237-4000</a>
         </address>
         <p><a href="https://www.thelitchfieldcompany.com/agents.php">The firm's advisors</a></p>
-        <p class="aside">The other offices, and a sample advisor's own site, are still to come in this preview.</p>
+        <p class="label" style="margin-bottom:4px">Offices</p>
+        <p>Litchfield, Prince Creek, Myrtle Beach, and Front Street.</p>
+        <p class="aside">The Ocean Highway address above is the Litchfield office. Addresses for the other three come from the firm.</p>
       </div>
 
       <form class="request" id="inquiryForm" novalidate>
@@ -162,7 +211,17 @@
             <option>Buying in the Lowcountry</option>
             <option>Selling a property</option>
             <option>A valuation</option>
+            <option>A printed copy of Litchfield Style</option>
             <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-area">Which part of the coast?</label>
+          <select id="f-area" name="area">
+            <option>Pawleys Island and Georgetown</option>
+            <option>Murrells Inlet and Myrtle Beach</option>
+            <option>The lake country inland</option>
+            <option>Not sure yet</option>
           </select>
         </div>
         <button class="btn" type="submit">Send the inquiry</button>
@@ -170,7 +229,7 @@
 
         <div class="sent" role="status" aria-live="polite">
           <h3>Preview only. Nothing was sent.</h3>
-          <p>On the live page, this inquiry goes straight into the CRM, marked buyer, seller, or valuation, and is routed to an advisor.</p>
+          <p>On the live page, this inquiry goes straight into the CRM, marked buyer, seller, or valuation, with the area attached, so the CRM's routing can send it to the right office.</p>
         </div>
       </form>
     </div>
@@ -185,6 +244,8 @@
         <li>Each community link above was checked against your search, using the names your search uses.</li>
         <li>The pages are plain files with no page builder behind them, so they load quickly on a telephone.</li>
         <li>The brokerage, the community, the listing, and the advisor all share this one design.</li>
+        <li>An inquiry carries its area with it, so your CRM's routing can send it to the right office.</li>
+        <li>Litchfield Style is a flipbook on another site today. Next: a page of its own here, and its stories as pages that search engines and AI answers can read.</li>
       </ul>
     </aside>
   </div>
@@ -194,10 +255,49 @@
   <div class="wrap">
     <img src="../img/brand/litchfield-christies-logo.png" width="470" height="90" alt="The Litchfield Company, Christie's International Real Estate">
     <p>Equal housing and MLS disclosures go here, worded as the brokerage and the Coastal Carolinas Association of REALTORS require.</p>
-    <p>Facts about the firm and its listings were read from thelitchfieldcompany.com on September 21, 2026. Prices and availability change. The photographs are from the firm's listings at 75 Marsh Hen Drive, 1229 Norris Drive, 285 Brickwell Lane, and 2735 Vanderbilt Boulevard. The logo and photographs belong to the brokerage, Christie's International Real Estate, and the listings.</p>
+    <p>Facts about the firm and its listings were read from thelitchfieldcompany.com on September 21, 2026. Prices and availability change. The photographs are from the firm's listings at 75 Marsh Hen Drive, 1229 Norris Drive, 102 Summer Haven Court, 2254 South Waccamaw Drive, 4853 Highway 17, 285 Brickwell Lane, and 2735 Vanderbilt Boulevard. The logo and photographs belong to the brokerage, Christie's International Real Estate, and the listings.</p>
     <p>Design preview built by Seth Bass, Triskope LLC, as part of the Hyperlocal Growth System. It is not the website of The Litchfield Company or Christie's International Real Estate, and nothing on it is an offer.</p>
   </div>
 </footer>
+
+<script>
+/* The front page photographs. Six of the firm's listings, one at a time. */
+(function(){
+  var hero=document.querySelector('.hero'); if(!hero) return;
+  var slides=[].slice.call(hero.querySelectorAll('.slide')); if(slides.length<2) return;
+  hero.classList.add('js');
+  var cap=hero.querySelector('a[data-cap]'), count=hero.querySelector('[data-n]');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var q=new URLSearchParams(location.search), still=q.has('still');
+  var DWELL=7000, FADE=1800, i=0, timer=null, paused=false;
+  var start=parseInt(q.get('slide'),10); if(start>=1&&start<=slides.length) i=start-1;
+  function setCap(s){ if(!cap) return; cap.textContent=s.getAttribute('data-cap'); cap.href=s.getAttribute('data-href'); }
+  function show(n,manual){
+    var prev=slides[i]; i=(n+slides.length)%slides.length; var next=slides[i];
+    if(next===prev) return;
+    next.classList.add('is-live'); void next.offsetWidth; next.classList.add('is-on'); next.removeAttribute('aria-hidden');
+    prev.classList.remove('is-on'); prev.setAttribute('aria-hidden','true');
+    setTimeout(function(){ if(!prev.classList.contains('is-on')) prev.classList.remove('is-live'); }, reduce?50:FADE+200);
+    if(reduce){ setCap(next); }
+    else{ var bar=cap.parentNode; bar.classList.add('is-fading'); setTimeout(function(){ setCap(next); bar.classList.remove('is-fading'); },650); }
+    if(count) count.textContent=i+1;
+    if(manual) restart();
+  }
+  function tick(){ if(paused||document.hidden) return; show(i+1,false); }
+  function restart(){ if(timer) clearInterval(timer); timer=null; if(reduce||still) return; timer=setInterval(tick,DWELL); }
+  [].forEach.call(hero.querySelectorAll('[data-go]'),function(b){ b.addEventListener('click',function(){ show(i+parseInt(b.getAttribute('data-go'),10),true); }); });
+  hero.addEventListener('mouseenter',function(){paused=true;}); hero.addEventListener('mouseleave',function(){paused=false;});
+  hero.addEventListener('focusin',function(){paused=true;}); hero.addEventListener('focusout',function(){paused=false;});
+  hero.addEventListener('keydown',function(e){ if(e.key==='ArrowLeft') show(i-1,true); if(e.key==='ArrowRight') show(i+1,true); });
+  slides.forEach(function(s,k){ if(k===i){ s.classList.add('is-on','is-live'); s.removeAttribute('aria-hidden'); } else { s.classList.remove('is-on'); s.setAttribute('aria-hidden','true'); } });
+  if(i!==0){ setCap(slides[i]); if(count) count.textContent=i+1; }
+  if(!reduce&&!still) hero.classList.add('moving');
+  window.addEventListener('load',function(){
+    slides.forEach(function(s){ var im=s.querySelector('img'); if(im&&im.loading==='lazy') im.loading='eager'; });
+    restart();
+  });
+})();
+</script>
 
 <script>
 /* Preview form: shows the confirmation state and sends nothing anywhere. */
