@@ -8,6 +8,21 @@
 <meta name="description" content="A Southern Colonial estate on 1.94 acres and a stocked pond in Island Estates, behind the gates of The Reserve at Litchfield. Five bedrooms, a saltwater pool, and a private suite. Built for buyers arriving from another state or another country.">
 <link rel="stylesheet" href="../fonts/fonts.css">
 <link rel="stylesheet" href="../css/preview.css">
+<style>
+.figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,4vw,56px);margin-top:clamp(30px,4.4vw,56px);border-top:1px solid var(--hair);padding-top:clamp(22px,3vw,36px)}
+@media(max-width:720px){.figures{grid-template-columns:1fr;gap:18px}}
+.figures b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4vw,3.2rem);line-height:1;letter-spacing:-.01em}
+.figures span{display:block;margin-top:8px}
+.day{list-style:none;margin:0;padding:0;max-width:var(--measure)}
+.day li{padding:18px 0;border-top:1px solid var(--hair)}
+.day li:last-child{border-bottom:1px solid var(--hair)}
+.day b{display:block;font-family:var(--display);font-weight:400;font-size:1.3rem;margin-bottom:6px}
+.day p{margin:0}
+.withheld{border:1px solid var(--slate);padding:clamp(22px,3vw,36px);max-width:var(--measure)}
+.withheld ul{margin:10px 0 0;padding-left:1.1em}
+.withheld li{margin-bottom:.35em}
+.own dl{max-width:var(--measure)}
+</style>
 <!--
   DESIGN PREVIEW of a landing page for buyers who are not here: another state, another country.
   Built 9-22-26 for the 9-23-26 meeting with The Litchfield Company. Listed 9-16-26.
@@ -52,33 +67,52 @@
     <div class="wrap">
       <p class="label">Island Estates, The Reserve at Litchfield, Pawleys Island</p>
       <h1>285 Brickwell Lane</h1>
-      <p class="standfirst">A Southern Colonial estate on 1.94 acres and its own stocked pond, behind the gates of The Reserve. Five bedrooms, a saltwater pool, and a private suite over the garage.</p>
+      <p class="standfirst">Privacy on this scale is rare in Pawleys Island: nearly two acres behind a gate, mature trees, and a pond with its own island, minutes from the beach. This week, four homes are for sale in The Reserve. This is one.</p>
+      <div class="figures">
+        <div><b>1.94</b><span class="label">acres, on a stocked pond with an island and a fountain</span></div>
+        <div><b>6,446</b><span class="label">heated square feet on two levels, with a basement still to finish</span></div>
+        <div><b>20 &times; 40</b><span class="label">foot saltwater pool, with a hot tub and a fireplace on the porch above it</span></div>
+      </div>
+    </div>
+  </section>
 
-      <div class="title-grid">
-        <div>
-          <figure class="plate">
-            <img src="../img/brickwell/brickwell-05.jpg" alt="The back of the house at dusk from across the saltwater pool, the porches lit." loading="lazy">
-            <figcaption>The pool and the rear porches at dusk.</figcaption>
-          </figure>
-          <div class="linkrow" style="margin-top:22px">
-            <a href="https://property-site.weston-media.com/order/b304f133-ada7-4e8e-b3e5-08df0b346469?version=45_168&amp;branding=false">Virtual tour</a>
-            <a href="https://www.thelitchfieldcompany.com/property/33-2622859-285-brickwell-ln-pawleys-island-SC-29585">All 80 photographs, on the listing</a>
-          </div>
-        </div>
+  <figure class="still" style="margin-top:clamp(36px,5vw,64px)">
+    <img src="../img/brickwell/brickwell-72.jpg" alt="Aerial view of the house, the pool, and the pond with its island, surrounded by woods." loading="lazy" style="object-position:center 50%">
+    <figcaption>The 1.94 acres from above: the house, the pool, and the pond.</figcaption>
+  </figure>
 
+  <section class="band" style="border-top:0">
+    <div class="wrap two even">
+      <div>
+        <h2>What a day here looks like</h2>
+        <ul class="day">
+          <li><b>Morning</b><p>Coffee from the built-in Miele in a kitchen renovated by Prodigy Kitchens and Baths, at an island long enough for the whole house. The study, with its built-ins, is a few steps away for anyone who has to work.</p></li>
+          <li><b>Afternoon</b><p>The pool is 20 by 40 feet and saltwater. Past it, the lawn runs down to the pond, where two chairs face the island. Upstairs, a library lined with built-ins for the hour when it is too hot to be outside.</p></li>
+          <li><b>Evening</b><p>The room the owners call the Men's Club: coffered ceilings, a wet bar with a wine refrigerator and ice maker, Sonos through the walls. Then the rear porch, where a gas fireplace and a hot tub look out over the lit pool.</p></li>
+          <li><b>Night</b><p>The primary suite has its own fireplace and a claw-foot tub. Three more bedrooms in the house each have a private bath, and the fifth bedroom, over the garage, has its own entrance, so guests come and go without passing through the house.</p></li>
+        </ul>
+      </div>
+      <div>
+        <figure class="plate"><img src="../img/brickwell/brickwell-55.jpg" alt="The rear porch with a brick fireplace and a hot tub, looking out to the pool." loading="lazy"><figcaption>The rear porch: fireplace, hot tub, and the pool below.</figcaption></figure>
+        <figure class="plate" style="margin-top:clamp(14px,1.8vw,26px)"><img src="../img/brickwell/brickwell-22.jpg" alt="The entertaining room with a blue coffered ceiling, a bar, and a wall of built-ins." loading="lazy"><figcaption>The Men's Club.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap two even">
+      <div>
+        <h2>The particulars</h2>
         <aside class="parts" aria-label="Particulars">
           <p class="label offered">Offered at</p>
           <p class="price">$2,950,000</p>
           <dl>
             <div><dt>Status</dt><dd>For sale. Listed September 16, 2026</dd></div>
             <div><dt>Built</dt><dd>2007, with a renovated kitchen and recent systems work</dd></div>
-            <div><dt>Heated area</dt><dd>6,446 sq ft on two levels, plus a basement</dd></div>
             <div><dt>Bedrooms</dt><dd>Five, one of them a suite over the garage with its own entrance</dd></div>
             <div><dt>Baths</dt><dd>Five full, one half</dd></div>
-            <div><dt>Homesite</dt><dd>1.94 acres, on a stocked pond with an island</dd></div>
-            <div><dt>Pool</dt><dd>20 by 40 feet, saltwater</dd></div>
             <div><dt>Garage</dt><dd>Three bays</dd></div>
-            <div><dt>Dues</dt><dd>$437 a month, covering management, common areas, recreation facilities, and security</dd></div>
+            <div><dt>Also</dt><dd>An elevator shaft, framed and waiting; a stocked pond; whole-house water filtration and audio</dd></div>
             <div><dt>MLS</dt><dd>2622859</dd></div>
           </dl>
           <div class="acts">
@@ -87,77 +121,17 @@
           </div>
         </aside>
       </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap two">
-      <h2>The house</h2>
       <div>
-        <p>The house is Southern Colonial in form: a two-story columned porch, broad brick steps, dark shutters, and mature planting. Inside, the ceilings vault, a free-floating spiral stair rises from the entry, and the millwork is custom throughout.</p>
-        <p>The kitchen was renovated by Prodigy Kitchens and Baths, with an expansive island and a built-in Miele coffee system. The main living room has a gas fireplace and opens to a second entertaining room the owners call the Men's Club: coffered ceilings, Sonos sound, and a wet bar with a wine refrigerator and ice maker. A study with built-ins, a dining room, a laundry room, and a second office round out the main level.</p>
-        <p>The primary suite has its own fireplace and a claw-foot tub. Three more bedrooms in the main house each have a private bath. Upstairs there is a library with built-ins. Over the three-car garage, the fifth bedroom and its full bath have their own entrance, so they work as a guest suite or an in-law suite. A mudroom sits between the garage and the house, and an elevator shaft, used for storage today, is already framed.</p>
-        <p>Outside, a 20 by 40 foot saltwater pool sits in a terrace, and the grounds run down to a private stocked pond with its own island, a fountain, and landscape lighting. The rear porch has a gas fireplace and a hot tub overlooking the pool. The basement is open space to finish as the owner likes.</p>
+        <figure class="plate"><img src="../img/brickwell/brickwell-05.jpg" alt="The back of the house at dusk from across the saltwater pool, the porches lit." loading="lazy"><figcaption>The pool and the rear porches at dusk.</figcaption></figure>
+        <div class="trio" style="grid-template-columns:1fr 1fr;margin-top:clamp(14px,1.8vw,26px)">
+          <figure class="plate"><img src="../img/brickwell/brickwell-06.jpg" alt="The free-floating spiral staircase in the entry." loading="lazy"><figcaption>The stair.</figcaption></figure>
+          <figure class="plate"><img src="../img/brickwell/brickwell-15.jpg" alt="The renovated kitchen: a wide island with seating, white cabinetry, and a range hood." loading="lazy"><figcaption>The kitchen.</figcaption></figure>
+        </div>
+        <p class="footnote">Eleven of the listing's 80 photographs are on this page. The rest, at full size, are in the portfolio.</p>
       </div>
     </div>
   </section>
 
-  <section class="band">
-    <div class="wrap">
-      <h2>What is here</h2>
-      <div class="schedule">
-        <div class="floor">
-          <h3>Inside</h3>
-          <ul>
-            <li>Vaulted ceilings and a free-floating spiral stair</li>
-            <li>Renovated kitchen with a built-in Miele coffee system</li>
-            <li>Living room with gas fireplace</li>
-            <li>The Men's Club: coffered ceilings, Sonos, wet bar</li>
-            <li>Study with built-ins, and a second office</li>
-            <li>Primary suite with fireplace and claw-foot tub</li>
-            <li>Three more en-suite bedrooms</li>
-            <li>Library upstairs</li>
-            <li>Suite over the garage with its own entrance</li>
-            <li>Mudroom, elevator shaft, a large storage closet</li>
-            <li>Basement</li>
-          </ul>
-        </div>
-        <div class="floor">
-          <h3>Outside</h3>
-          <ul>
-            <li>20 by 40 foot saltwater pool and terrace</li>
-            <li>Rear porch with gas fireplace and hot tub</li>
-            <li>Screened porch, deck, and patio</li>
-            <li>Stocked pond with an island and a fountain</li>
-            <li>Landscape lighting and irrigation</li>
-            <li>Fenced grounds, storage</li>
-            <li>Three-car attached garage</li>
-          </ul>
-        </div>
-        <div class="floor">
-          <h3>Recent improvements</h3>
-          <ul>
-            <li>Updated HVAC systems</li>
-            <li>Whole-house water filtration</li>
-            <li>Outdoor lighting</li>
-            <li>Pool decking</li>
-            <li>Upgraded security and whole-house audio</li>
-          </ul>
-          <p class="footnote">As stated in the listing. The portfolio carries the dates and the contractors where the firm has them.</p>
-        </div>
-      </div>
-      <div class="trio">
-        <figure class="plate"><img src="../img/brickwell/brickwell-06.jpg" alt="The free-floating spiral staircase in the entry." loading="lazy"><figcaption>The stair.</figcaption></figure>
-        <figure class="plate"><img src="../img/brickwell/brickwell-15.jpg" alt="The renovated kitchen: a wide island with seating, white cabinetry, and a range hood." loading="lazy"><figcaption>The kitchen.</figcaption></figure>
-        <figure class="plate"><img src="../img/brickwell/brickwell-22.jpg" alt="The entertaining room with a blue coffered ceiling, a bar, and a wall of built-ins." loading="lazy"><figcaption>The Men's Club.</figcaption></figure>
-      </div>
-      <div class="trio" style="margin-top:clamp(14px,1.8vw,26px)">
-        <figure class="plate"><img src="../img/brickwell/brickwell-30.jpg" alt="The primary bedroom with its fireplace." loading="lazy"><figcaption>The primary suite.</figcaption></figure>
-        <figure class="plate"><img src="../img/brickwell/brickwell-35.jpg" alt="A claw-foot tub under a window in the primary bath." loading="lazy"><figcaption>The primary bath.</figcaption></figure>
-        <figure class="plate"><img src="../img/brickwell/brickwell-41.jpg" alt="The upstairs library: built-in shelves on every wall and a leather sofa." loading="lazy"><figcaption>The library.</figcaption></figure>
-      </div>
-    </div>
-  </section>
 
   <section class="band">
     <div class="wrap">
@@ -180,11 +154,7 @@
           </dl>
         </aside>
       </div>
-      <div class="trio">
-        <figure class="plate"><img src="../img/brickwell/brickwell-66.jpg" alt="Two white chairs on the lawn at the edge of the pond, with the island beyond." loading="lazy"><figcaption>The pond, from the lawn.</figcaption></figure>
-        <figure class="plate"><img src="../img/brickwell/brickwell-55.jpg" alt="The rear porch with a brick fireplace and a hot tub, looking out to the pool." loading="lazy"><figcaption>The rear porch.</figcaption></figure>
-        <figure class="plate"><img src="../img/brickwell/brickwell-72.jpg" alt="Aerial view of the house, pool, and pond with its island, surrounded by woods." loading="lazy"><figcaption>The 1.94 acres from above.</figcaption></figure>
-      </div>
+      <figure class="plate wide" style="margin-top:clamp(30px,4vw,52px)"><img src="../img/brickwell/brickwell-66.jpg" alt="Two white chairs on the lawn at the edge of the pond, with the island beyond." loading="lazy"><figcaption>The pond, from the lawn.</figcaption></figure>
       <div class="linkrow">
         <a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=The%20Reserve&amp;areas%5B%5D=neighborhood:the%20reserve:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">Everything for sale in The Reserve</a>
         <a href="https://www.thelitchfieldcompany.com/market-report.php">Market reports</a>
@@ -194,23 +164,32 @@
 
   <section class="band" id="from-away">
     <div class="wrap">
-      <h2>Buying from another state, or another country</h2>
-      <div class="text-ledger">
-        <div>
-          <p>Most buyers for a house like this are not in Pawleys Island when they first see it. The firm is set up for that. A live video walkthrough can be arranged before any travel, the portfolio answers the questions counsel and accountants ask, and the advisor stays on the same telephone number from the first call to closing.</p>
-          <p>For buyers outside the United States, the firm coordinates with counsel on how title is held, how funds are wired, and what applies at resale.</p>
-          <p class="aside">The ledger states the rules in general terms. How each applies to a given buyer is a question for the firm's counsel.</p>
+      <h2>What the portals will not show you</h2>
+      <div class="two even">
+        <div class="withheld">
+          <p class="label">In the portfolio, and nowhere else</p>
+          <ul>
+            <li>The survey and the floor plans, as the firm has them</li>
+            <li>The current tax bill</li>
+            <li>The covenants, and the fee schedules for the Harbor Club and the golf club</li>
+            <li>The flood zone, with insurance guidance</li>
+            <li>The dates and contractors for the recent HVAC, filtration, lighting, pool decking, security, and audio work</li>
+            <li>All 80 photographs at full size, and the virtual tour</li>
+            <li>For buyers outside the United States, a one-page note from the firm's counsel on title, wiring, and withholding at resale</li>
+          </ul>
         </div>
-        <aside class="parts" aria-label="Before you travel">
-          <dl>
-            <div><dt>Video</dt><dd>A live walkthrough with the advisor, on your schedule</dd></div>
-            <div><dt>Property tax</dt><dd>South Carolina assesses an owner's primary residence at 4 percent of value and second homes and non-resident owners at 6 percent. The current tax bill is in the portfolio</dd></div>
-            <div><dt>Insurance</dt><dd>Flood zone and insurance quotes before contract, not after</dd></div>
-            <div><dt>Dues and clubs</dt><dd>The $437 monthly dues, and the Harbor Club and golf club fee schedules, in the portfolio</dd></div>
-            <div><dt>At resale, non-U.S. owners</dt><dd>Federal FIRPTA withholding, 15 percent of the sale price at closing, applies when a foreign owner sells; the state has its own withholding</dd></div>
-            <div><dt>Ownership</dt><dd>Individual, trust, or entity; the firm's counsel advises which</dd></div>
-          </dl>
-        </aside>
+        <div class="own">
+          <h3 style="font-size:1.4rem;margin-bottom:12px">What it costs to own</h3>
+          <aside class="parts"><dl>
+            <div><dt>Dues</dt><dd>$437 a month: management, common areas, recreation facilities, and security</dd></div>
+            <div><dt>Property tax</dt><dd>South Carolina assesses an owner's primary residence at 4 percent of value, and second homes and non-resident owners at 6 percent. The current bill is in the portfolio</dd></div>
+            <div><dt>Clubs</dt><dd>The Harbor Club and the golf club are separate memberships, each with its own schedule</dd></div>
+            <div><dt>At resale, non-U.S. owners</dt><dd>Federal FIRPTA withholding of 15 percent of the sale price at closing, plus the state's own withholding</dd></div>
+          </dl></aside>
+          <p class="aside" style="margin-top:14px">Stated in general terms. How each applies to a given buyer is a question for the firm's counsel.</p>
+          <h3 style="font-size:1.4rem;margin:30px 0 12px">Seeing it from where you are</h3>
+          <p>A live video walkthrough with the advisor, at your hour, before anyone books a flight. You direct it: the rooms you want, the drive in, the pond at the time of day you ask for.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -218,16 +197,8 @@
   <section class="band invite" id="inquire">
     <div class="wrap two even">
       <div>
-        <h2>Request the portfolio</h2>
-        <p>The portfolio for 285 Brickwell Lane is sent privately by the listing advisor. It holds:</p>
-        <ul>
-          <li>all 80 photographs and the virtual tour</li>
-          <li>the survey and floor plans, as the firm has them</li>
-          <li>the dues, the club fee schedules, and the covenants</li>
-          <li>the current tax bill, the flood zone, and insurance guidance</li>
-          <li>the dates and contractors for the recent improvements</li>
-        </ul>
-        <p>Say where you are, and the advisor will reply in your hours.</p>
+        <h2>Ask for the portfolio</h2>
+        <p>The portfolio is sent privately by the listing advisor. Say where you are, and the reply comes in your hours.</p>
         <div class="advisor">
           <div class="mono" aria-hidden="true">LC</div>
           <p><span class="label">Listing advisor</span>
