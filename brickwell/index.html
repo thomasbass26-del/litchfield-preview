@@ -595,7 +595,8 @@ body.warm{--paper:#F6F1E8;--sheet:#FBF8F2;--ink:#2A2521;--soft:#7A6C5C;--slate:#
     thumbs.forEach(function(t,j){ t.classList.toggle('is-on',j===k); });
     var ch=frames[k].getAttribute('data-ch'); chaps.forEach(function(b){ b.classList.toggle('is-on',b.textContent.indexOf(ch)===0); });
     if(count) count.textContent=k+1; if(chEl) chEl.textContent=ch;
-    var t=thumbs[k]; if(t&&t.scrollIntoView) t.scrollIntoView({block:'nearest',inline:'center',behavior:reduce?'auto':'smooth'});
+    var t=thumbs[k], strip=document.getElementById('strip');
+    if(t&&strip){ var left=t.offsetLeft-(strip.clientWidth-t.offsetWidth)/2; if(strip.scrollTo) strip.scrollTo({left:Math.max(0,left),behavior:reduce?'auto':'smooth'}); else strip.scrollLeft=Math.max(0,left); }
     if(manual) restart();
   }
   function tick(){ if(paused||document.hidden) return; show(i+1,false); }
