@@ -5,40 +5,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>285 Brickwell Lane, The Reserve, Pawleys Island | The Litchfield Company</title>
-<meta name="description" content="A Southern Colonial estate on 1.94 acres and a stocked pond in Island Estates, behind the gates of The Reserve at Litchfield. Five bedrooms, a saltwater pool, and a private suite. Built for buyers arriving from another state or another country.">
+<meta name="description" content="Nearly two acres and a pond of its own, behind the gates of The Reserve at Litchfield. All 80 photographs, the virtual tour, and the portfolio for buyers arriving from another state or another country.">
 <link rel="stylesheet" href="../fonts/fonts.css">
 <link rel="stylesheet" href="../css/preview.css">
+<!--
+  DESIGN PREVIEW, version 3 (9-23-26): the whole photograph set, a warmer palette, and a gallery built to be looked at.
+  Every fact is from the brokerage's listing for MLS 2622859 (read 9-22-26), and the "four homes for sale in The Reserve"
+  line from their own search on 9-23-26. The gallery's chapters (Arriving, The main rooms, and so on) were set by looking
+  at the photographs, not from the listing; no photograph carries a room name for that reason, only its number and chapter.
+  The virtual tour is the listing's (Weston Media) and opens in its own window. Photographs are the listing's; web copies at
+  1800 px and thumbnails at 240 px are in img/brickwell/web and img/brickwell/thumb. See img/brickwell/SOURCE.txt.
+-->
 <style>
+body.warm{--paper:#F6F1E8;--sheet:#FBF8F2;--ink:#2A2521;--soft:#7A6C5C;--slate:#5B4E42;--hair:#E3D9CB;--tint:#EDE3D4;--gold:#9C7F4E}
+.cover{position:relative;margin:0;background:#1D1915}
+.cover img{width:100%;height:min(88vh,960px);min-height:420px;object-fit:cover;object-position:center 55%;display:block}
+.cover .scrim{position:absolute;inset:auto 0 0 0;padding:clamp(120px,18vh,220px) 0 clamp(30px,4vw,56px);background:linear-gradient(to top,rgba(29,25,21,.82),rgba(29,25,21,.45) 45%,rgba(29,25,21,0));color:#F2EADB}
+.cover .scrim .label{color:#D9CDB8}
+.cover h1{color:#F6EFE2;font-size:clamp(2.4rem,5.6vw,4.8rem);letter-spacing:-.008em;margin:10px 0 0}
+.cover .line{font-style:italic;color:#E1D6C2;font-size:1.15rem;margin:14px 0 0;max-width:48ch}
 .figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,4vw,56px);margin-top:clamp(30px,4.4vw,56px);border-top:1px solid var(--hair);padding-top:clamp(22px,3vw,36px)}
 @media(max-width:720px){.figures{grid-template-columns:1fr;gap:18px}}
-.figures b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4vw,3.2rem);line-height:1;letter-spacing:-.01em}
+.figures b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4vw,3.2rem);line-height:1;letter-spacing:-.01em;color:var(--slate)}
 .figures span{display:block;margin-top:8px}
+.media{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:clamp(26px,3vw,40px);font-size:1rem}
+
+/* the theatre */
+.theatre{background:#1D1915;color:#EFE7DA;padding:clamp(28px,4vw,56px) 0 clamp(26px,3vw,40px);margin-top:clamp(40px,6vw,88px)}
+.theatre .hd{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:18px}
+.theatre h2{color:#F6EFE2;font-size:clamp(1.6rem,2.8vw,2.3rem);margin:0}
+.theatre .hd .label{color:#B9AC96}
+.stage{position:relative;height:min(80vh,880px);min-height:360px;overflow:hidden;background:#151210}
+.frame{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 1100ms cubic-bezier(.4,0,.2,1)}
+.frame.is-on{opacity:1}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.stage:fullscreen{height:100vh;background:#151210} .stage:fullscreen .frame img{object-fit:contain}
+.th-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:1px solid rgba(246,239,226,.55);background:rgba(29,25,21,.35);color:#F6EFE2;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 300ms}
+.stage:hover .th-btn,.stage:focus-within .th-btn{opacity:1} @media(hover:none){.th-btn{opacity:1}}
+.th-btn:hover{background:rgba(29,25,21,.65)} .th-btn.prev{left:clamp(12px,2vw,28px)} .th-btn.next{right:clamp(12px,2vw,28px)}
+.th-btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.th-full{position:absolute;right:clamp(12px,2vw,28px);bottom:16px;border:1px solid rgba(246,239,226,.5);background:rgba(29,25,21,.35);color:#F6EFE2;font-family:var(--ui);font-size:.8rem;letter-spacing:.03em;padding:8px 12px;cursor:pointer;opacity:0;transition:opacity 300ms}
+.stage:hover .th-full,.stage:focus-within .th-full{opacity:1} @media(hover:none){.th-full{opacity:1}}
+.th-bar{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;margin-top:16px}
+.th-count{font-family:var(--display);font-size:1.35rem;color:#F6EFE2} .th-count span{font-family:var(--ui);font-size:.85rem;color:#B9AC96;margin-left:6px}
+.th-count em{font-style:italic;color:#D9CDB8;margin-left:14px;font-size:1.05rem}
+.chapters{display:flex;flex-wrap:wrap;gap:4px 18px}
+.chapters button{background:none;border:0;padding:6px 0;color:#B9AC96;font-family:var(--ui);font-size:.82rem;letter-spacing:.02em;cursor:pointer;border-bottom:1px solid transparent}
+.chapters button span{display:none} .chapters button:hover,.chapters button.is-on{color:#F6EFE2;border-bottom-color:var(--gold)}
+.strip{display:flex;gap:6px;overflow-x:auto;padding:16px 0 4px;scrollbar-width:thin;scrollbar-color:#5B4E42 transparent;-webkit-overflow-scrolling:touch}
+.strip button{flex:0 0 auto;padding:0;border:0;background:none;cursor:pointer;opacity:.5;transition:opacity 300ms;border-bottom:2px solid transparent}
+.strip button img{width:96px;height:64px;object-fit:cover;display:block}
+.strip button:hover,.strip button.is-on{opacity:1} .strip button.is-on{border-bottom-color:var(--gold)}
+@media(prefers-reduced-motion:reduce){.frame{transition:none}}
+
 .day{list-style:none;margin:0;padding:0;max-width:var(--measure)}
-.day li{padding:18px 0;border-top:1px solid var(--hair)}
-.day li:last-child{border-bottom:1px solid var(--hair)}
-.day b{display:block;font-family:var(--display);font-weight:400;font-size:1.3rem;margin-bottom:6px}
-.day p{margin:0}
-.withheld{border:1px solid var(--slate);padding:clamp(22px,3vw,36px);max-width:var(--measure)}
-.withheld ul{margin:10px 0 0;padding-left:1.1em}
-.withheld li{margin-bottom:.35em}
-.own dl{max-width:var(--measure)}
+.day li{padding:18px 0;border-top:1px solid var(--hair)} .day li:last-child{border-bottom:1px solid var(--hair)}
+.day b{display:block;font-family:var(--display);font-weight:400;font-size:1.3rem;margin-bottom:6px} .day p{margin:0}
+.withheld{border:1px solid var(--slate);padding:clamp(22px,3vw,36px);max-width:var(--measure);background:var(--sheet)}
+.withheld ul{margin:10px 0 0;padding-left:1.1em} .withheld li{margin-bottom:.35em}
 </style>
-<!--
-  DESIGN PREVIEW of a landing page for buyers who are not here: another state, another country.
-  Built 9-22-26 for the 9-23-26 meeting with The Litchfield Company. Listed 9-16-26.
-  Every fact comes from the brokerage's public listing for MLS 2622859 on thelitchfieldcompany.com, read 9-22-26:
-  price, status, year built, areas, rooms, the 20 by 40 saltwater pool, the pond, the dues ($437, paid monthly, and
-  what they include), the community features, the septic, the schools, the recent improvements, and the virtual tour.
-  The golf club's designer (Greg Norman) is from Peace Sotheby's International Realty's published notes on Pawleys
-  Island; the club is a separate private membership.
-  South Carolina's 4% and 6% assessment ratios and the federal FIRPTA withholding at 15% are general rules; the
-  firm's counsel confirms how they apply to a given buyer.
-  Left out on purpose: floor plans, the survey, the flood zone, the tax bill, club fee schedules, and the covenants.
-  Those go in the portfolio once the firm supplies them. The listing advisor is not named on the page.
-  Photographs are the listing's. See img/brickwell/SOURCE.txt. Copy is written fresh and stays on the property.
--->
 </head>
-<body>
+<body class="warm">
 <p class="preview-line">Design preview prepared for The Litchfield Company by Seth Bass, Triskope. This is not the brokerage's website. <a href="https://www.thelitchfieldcompany.com/property/33-2622859-285-brickwell-ln-pawleys-island-SC-29585">The listing itself is on thelitchfieldcompany.com.</a></p>
 
 <header class="mast">
@@ -56,30 +83,218 @@
 </header>
 
 <main>
-  <figure class="still">
-    <img src="../img/brickwell/brickwell-01.jpg" width="2500" height="1667"
-         alt="285 Brickwell Lane at dusk: a white two-story house with a columned porch and dark shutters, set back under live oaks at the end of a sand drive."
-         style="object-position:center 55%">
-    <figcaption>285 Brickwell Lane at dusk, from the drive.</figcaption>
-  </figure>
-
-  <section class="title" style="padding-top:clamp(30px,4.5vw,60px)">
-    <div class="wrap">
+  <figure class="cover">
+    <img src="../img/brickwell/web/brickwell-01.jpg" width="1800" height="1200" alt="285 Brickwell Lane at dusk: a white two-story house with a columned porch and dark shutters, set back under live oaks at the end of a sand drive.">
+    <figcaption class="scrim"><div class="wrap">
       <p class="label">Island Estates, The Reserve at Litchfield, Pawleys Island</p>
       <h1>285 Brickwell Lane</h1>
-      <p class="standfirst">Privacy on this scale is rare in Pawleys Island: nearly two acres behind a gate, mature trees, and a pond with its own island, minutes from the beach. This week, four homes are for sale in The Reserve. This is one.</p>
+      <p class="line">Nearly two acres and a pond of its own, behind the gate.</p>
+    </div></figcaption>
+  </figure>
+
+  <section class="title" style="padding-top:clamp(36px,5vw,64px)">
+    <div class="wrap">
+      <p class="standfirst" style="margin-top:0">Privacy on this scale is rare in Pawleys Island: mature trees, a pond with its own island at the foot of the lawn, and a gate between the house and the road, minutes from the beach. This week, four homes are for sale in The Reserve. This is one of them.</p>
       <div class="figures">
         <div><b>1.94</b><span class="label">acres, on a stocked pond with an island and a fountain</span></div>
         <div><b>6,446</b><span class="label">heated square feet on two levels, with a basement still to finish</span></div>
         <div><b>20 &times; 40</b><span class="label">foot saltwater pool, with a hot tub and a fireplace on the porch above it</span></div>
       </div>
+      <div class="media">
+        <a href="#gallery">All 80 photographs</a>
+        <a href="https://property-site.weston-media.com/order/b304f133-ada7-4e8e-b3e5-08df0b346469?version=45_168&amp;branding=false" target="_blank" rel="noopener">Virtual tour</a>
+        <a href="#inquire">A live video walkthrough, at your hour</a>
+        <a href="#inquire">The portfolio</a>
+      </div>
     </div>
   </section>
 
-  <figure class="still" style="margin-top:clamp(36px,5vw,64px)">
-    <img src="../img/brickwell/brickwell-72.jpg" alt="Aerial view of the house, the pool, and the pond with its island, surrounded by woods." loading="lazy" style="object-position:center 50%">
-    <figcaption>The 1.94 acres from above: the house, the pool, and the pond.</figcaption>
-  </figure>
+  <section class="theatre" id="gallery" aria-roledescription="carousel" aria-label="All 80 photographs of 285 Brickwell Lane">
+    <div class="wrap hd"><h2>The house, in 80 photographs</h2><span class="label">Arrows, the strip, or the chapters. Hover to pause.</span></div>
+    <div class="stage" id="stage" tabindex="0">
+      <figure class="frame is-on" data-ch="Arriving"><img src="../img/brickwell/web/brickwell-01.jpg" alt="Photograph 1 of 80: arriving."></figure>
+      <figure class="frame" data-ch="Arriving"><img src="../img/brickwell/web/brickwell-02.jpg" alt="Photograph 2 of 80: arriving."></figure>
+      <figure class="frame" data-ch="Arriving"><img src="../img/brickwell/web/brickwell-03.jpg" alt="Photograph 3 of 80: arriving."></figure>
+      <figure class="frame" data-ch="Arriving"><img data-src="../img/brickwell/web/brickwell-04.jpg" alt="Photograph 4 of 80: arriving."></figure>
+      <figure class="frame" data-ch="Arriving"><img data-src="../img/brickwell/web/brickwell-05.jpg" alt="Photograph 5 of 80: arriving."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-06.jpg" alt="Photograph 6 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-07.jpg" alt="Photograph 7 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-08.jpg" alt="Photograph 8 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-09.jpg" alt="Photograph 9 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-10.jpg" alt="Photograph 10 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-11.jpg" alt="Photograph 11 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-12.jpg" alt="Photograph 12 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-13.jpg" alt="Photograph 13 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-14.jpg" alt="Photograph 14 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-15.jpg" alt="Photograph 15 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-16.jpg" alt="Photograph 16 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-17.jpg" alt="Photograph 17 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-18.jpg" alt="Photograph 18 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-19.jpg" alt="Photograph 19 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-20.jpg" alt="Photograph 20 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-21.jpg" alt="Photograph 21 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-22.jpg" alt="Photograph 22 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-23.jpg" alt="Photograph 23 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="The main rooms"><img data-src="../img/brickwell/web/brickwell-24.jpg" alt="Photograph 24 of 80: the main rooms."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-25.jpg" alt="Photograph 25 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-26.jpg" alt="Photograph 26 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-27.jpg" alt="Photograph 27 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-28.jpg" alt="Photograph 28 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-29.jpg" alt="Photograph 29 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-30.jpg" alt="Photograph 30 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-31.jpg" alt="Photograph 31 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-32.jpg" alt="Photograph 32 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-33.jpg" alt="Photograph 33 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-34.jpg" alt="Photograph 34 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-35.jpg" alt="Photograph 35 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-36.jpg" alt="Photograph 36 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-37.jpg" alt="Photograph 37 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-38.jpg" alt="Photograph 38 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-39.jpg" alt="Photograph 39 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Bedrooms and baths"><img data-src="../img/brickwell/web/brickwell-40.jpg" alt="Photograph 40 of 80: bedrooms and baths."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-41.jpg" alt="Photograph 41 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-42.jpg" alt="Photograph 42 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-43.jpg" alt="Photograph 43 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-44.jpg" alt="Photograph 44 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-45.jpg" alt="Photograph 45 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-46.jpg" alt="Photograph 46 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-47.jpg" alt="Photograph 47 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-48.jpg" alt="Photograph 48 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-49.jpg" alt="Photograph 49 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-50.jpg" alt="Photograph 50 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Upstairs"><img data-src="../img/brickwell/web/brickwell-51.jpg" alt="Photograph 51 of 80: upstairs."></figure>
+      <figure class="frame" data-ch="Porches and the pool"><img data-src="../img/brickwell/web/brickwell-52.jpg" alt="Photograph 52 of 80: porches and the pool."></figure>
+      <figure class="frame" data-ch="Porches and the pool"><img data-src="../img/brickwell/web/brickwell-53.jpg" alt="Photograph 53 of 80: porches and the pool."></figure>
+      <figure class="frame" data-ch="Porches and the pool"><img data-src="../img/brickwell/web/brickwell-54.jpg" alt="Photograph 54 of 80: porches and the pool."></figure>
+      <figure class="frame" data-ch="Porches and the pool"><img data-src="../img/brickwell/web/brickwell-55.jpg" alt="Photograph 55 of 80: porches and the pool."></figure>
+      <figure class="frame" data-ch="Porches and the pool"><img data-src="../img/brickwell/web/brickwell-56.jpg" alt="Photograph 56 of 80: porches and the pool."></figure>
+      <figure class="frame" data-ch="Porches and the pool"><img data-src="../img/brickwell/web/brickwell-57.jpg" alt="Photograph 57 of 80: porches and the pool."></figure>
+      <figure class="frame" data-ch="Porches and the pool"><img data-src="../img/brickwell/web/brickwell-58.jpg" alt="Photograph 58 of 80: porches and the pool."></figure>
+      <figure class="frame" data-ch="Basement and garage"><img data-src="../img/brickwell/web/brickwell-59.jpg" alt="Photograph 59 of 80: basement and garage."></figure>
+      <figure class="frame" data-ch="Basement and garage"><img data-src="../img/brickwell/web/brickwell-60.jpg" alt="Photograph 60 of 80: basement and garage."></figure>
+      <figure class="frame" data-ch="Basement and garage"><img data-src="../img/brickwell/web/brickwell-61.jpg" alt="Photograph 61 of 80: basement and garage."></figure>
+      <figure class="frame" data-ch="Basement and garage"><img data-src="../img/brickwell/web/brickwell-62.jpg" alt="Photograph 62 of 80: basement and garage."></figure>
+      <figure class="frame" data-ch="The grounds"><img data-src="../img/brickwell/web/brickwell-63.jpg" alt="Photograph 63 of 80: the grounds."></figure>
+      <figure class="frame" data-ch="The grounds"><img data-src="../img/brickwell/web/brickwell-64.jpg" alt="Photograph 64 of 80: the grounds."></figure>
+      <figure class="frame" data-ch="The grounds"><img data-src="../img/brickwell/web/brickwell-65.jpg" alt="Photograph 65 of 80: the grounds."></figure>
+      <figure class="frame" data-ch="The grounds"><img data-src="../img/brickwell/web/brickwell-66.jpg" alt="Photograph 66 of 80: the grounds."></figure>
+      <figure class="frame" data-ch="The grounds"><img data-src="../img/brickwell/web/brickwell-67.jpg" alt="Photograph 67 of 80: the grounds."></figure>
+      <figure class="frame" data-ch="The grounds"><img data-src="../img/brickwell/web/brickwell-68.jpg" alt="Photograph 68 of 80: the grounds."></figure>
+      <figure class="frame" data-ch="The grounds"><img data-src="../img/brickwell/web/brickwell-69.jpg" alt="Photograph 69 of 80: the grounds."></figure>
+      <figure class="frame" data-ch="From the air"><img data-src="../img/brickwell/web/brickwell-70.jpg" alt="Photograph 70 of 80: from the air."></figure>
+      <figure class="frame" data-ch="From the air"><img data-src="../img/brickwell/web/brickwell-71.jpg" alt="Photograph 71 of 80: from the air."></figure>
+      <figure class="frame" data-ch="From the air"><img data-src="../img/brickwell/web/brickwell-72.jpg" alt="Photograph 72 of 80: from the air."></figure>
+      <figure class="frame" data-ch="From the air"><img data-src="../img/brickwell/web/brickwell-73.jpg" alt="Photograph 73 of 80: from the air."></figure>
+      <figure class="frame" data-ch="From the air"><img data-src="../img/brickwell/web/brickwell-74.jpg" alt="Photograph 74 of 80: from the air."></figure>
+      <figure class="frame" data-ch="At dusk"><img data-src="../img/brickwell/web/brickwell-75.jpg" alt="Photograph 75 of 80: at dusk."></figure>
+      <figure class="frame" data-ch="At dusk"><img data-src="../img/brickwell/web/brickwell-76.jpg" alt="Photograph 76 of 80: at dusk."></figure>
+      <figure class="frame" data-ch="At dusk"><img data-src="../img/brickwell/web/brickwell-77.jpg" alt="Photograph 77 of 80: at dusk."></figure>
+      <figure class="frame" data-ch="At dusk"><img data-src="../img/brickwell/web/brickwell-78.jpg" alt="Photograph 78 of 80: at dusk."></figure>
+      <figure class="frame" data-ch="At dusk"><img data-src="../img/brickwell/web/brickwell-79.jpg" alt="Photograph 79 of 80: at dusk."></figure>
+      <figure class="frame" data-ch="At dusk"><img data-src="../img/brickwell/web/brickwell-80.jpg" alt="Photograph 80 of 80: at dusk."></figure>
+      <button type="button" class="th-btn prev" data-step="-1" aria-label="Previous photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" class="th-btn next" data-step="1" aria-label="Next photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button type="button" class="th-full" id="thFull">Full screen</button>
+    </div>
+    <div class="wrap">
+      <div class="th-bar">
+        <div class="th-count"><b data-n>1</b><span>of 80</span><em data-ch>Arriving</em></div>
+        <nav class="chapters" aria-label="Chapters">
+        <button type="button" data-go="0">Arriving<span>1&ndash;5</span></button>
+        <button type="button" data-go="5">The main rooms<span>6&ndash;24</span></button>
+        <button type="button" data-go="24">Bedrooms and baths<span>25&ndash;40</span></button>
+        <button type="button" data-go="40">Upstairs<span>41&ndash;51</span></button>
+        <button type="button" data-go="51">Porches and the pool<span>52&ndash;58</span></button>
+        <button type="button" data-go="58">Basement and garage<span>59&ndash;62</span></button>
+        <button type="button" data-go="62">The grounds<span>63&ndash;69</span></button>
+        <button type="button" data-go="69">From the air<span>70&ndash;74</span></button>
+        <button type="button" data-go="74">At dusk<span>75&ndash;80</span></button>
+        </nav>
+      </div>
+      <div class="strip" id="strip">
+      <button type="button" data-go="0" aria-label="Photograph 1"><img src="../img/brickwell/thumb/brickwell-01.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="1" aria-label="Photograph 2"><img src="../img/brickwell/thumb/brickwell-02.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="2" aria-label="Photograph 3"><img src="../img/brickwell/thumb/brickwell-03.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="3" aria-label="Photograph 4"><img src="../img/brickwell/thumb/brickwell-04.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="4" aria-label="Photograph 5"><img src="../img/brickwell/thumb/brickwell-05.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="5" aria-label="Photograph 6"><img src="../img/brickwell/thumb/brickwell-06.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="6" aria-label="Photograph 7"><img src="../img/brickwell/thumb/brickwell-07.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="7" aria-label="Photograph 8"><img src="../img/brickwell/thumb/brickwell-08.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="8" aria-label="Photograph 9"><img src="../img/brickwell/thumb/brickwell-09.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="9" aria-label="Photograph 10"><img src="../img/brickwell/thumb/brickwell-10.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="10" aria-label="Photograph 11"><img src="../img/brickwell/thumb/brickwell-11.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="11" aria-label="Photograph 12"><img src="../img/brickwell/thumb/brickwell-12.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="12" aria-label="Photograph 13"><img src="../img/brickwell/thumb/brickwell-13.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="13" aria-label="Photograph 14"><img src="../img/brickwell/thumb/brickwell-14.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="14" aria-label="Photograph 15"><img src="../img/brickwell/thumb/brickwell-15.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="15" aria-label="Photograph 16"><img src="../img/brickwell/thumb/brickwell-16.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="16" aria-label="Photograph 17"><img src="../img/brickwell/thumb/brickwell-17.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="17" aria-label="Photograph 18"><img src="../img/brickwell/thumb/brickwell-18.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="18" aria-label="Photograph 19"><img src="../img/brickwell/thumb/brickwell-19.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="19" aria-label="Photograph 20"><img src="../img/brickwell/thumb/brickwell-20.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="20" aria-label="Photograph 21"><img src="../img/brickwell/thumb/brickwell-21.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="21" aria-label="Photograph 22"><img src="../img/brickwell/thumb/brickwell-22.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="22" aria-label="Photograph 23"><img src="../img/brickwell/thumb/brickwell-23.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="23" aria-label="Photograph 24"><img src="../img/brickwell/thumb/brickwell-24.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="24" aria-label="Photograph 25"><img src="../img/brickwell/thumb/brickwell-25.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="25" aria-label="Photograph 26"><img src="../img/brickwell/thumb/brickwell-26.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="26" aria-label="Photograph 27"><img src="../img/brickwell/thumb/brickwell-27.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="27" aria-label="Photograph 28"><img src="../img/brickwell/thumb/brickwell-28.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="28" aria-label="Photograph 29"><img src="../img/brickwell/thumb/brickwell-29.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="29" aria-label="Photograph 30"><img src="../img/brickwell/thumb/brickwell-30.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="30" aria-label="Photograph 31"><img src="../img/brickwell/thumb/brickwell-31.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="31" aria-label="Photograph 32"><img src="../img/brickwell/thumb/brickwell-32.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="32" aria-label="Photograph 33"><img src="../img/brickwell/thumb/brickwell-33.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="33" aria-label="Photograph 34"><img src="../img/brickwell/thumb/brickwell-34.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="34" aria-label="Photograph 35"><img src="../img/brickwell/thumb/brickwell-35.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="35" aria-label="Photograph 36"><img src="../img/brickwell/thumb/brickwell-36.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="36" aria-label="Photograph 37"><img src="../img/brickwell/thumb/brickwell-37.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="37" aria-label="Photograph 38"><img src="../img/brickwell/thumb/brickwell-38.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="38" aria-label="Photograph 39"><img src="../img/brickwell/thumb/brickwell-39.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="39" aria-label="Photograph 40"><img src="../img/brickwell/thumb/brickwell-40.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="40" aria-label="Photograph 41"><img src="../img/brickwell/thumb/brickwell-41.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="41" aria-label="Photograph 42"><img src="../img/brickwell/thumb/brickwell-42.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="42" aria-label="Photograph 43"><img src="../img/brickwell/thumb/brickwell-43.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="43" aria-label="Photograph 44"><img src="../img/brickwell/thumb/brickwell-44.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="44" aria-label="Photograph 45"><img src="../img/brickwell/thumb/brickwell-45.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="45" aria-label="Photograph 46"><img src="../img/brickwell/thumb/brickwell-46.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="46" aria-label="Photograph 47"><img src="../img/brickwell/thumb/brickwell-47.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="47" aria-label="Photograph 48"><img src="../img/brickwell/thumb/brickwell-48.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="48" aria-label="Photograph 49"><img src="../img/brickwell/thumb/brickwell-49.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="49" aria-label="Photograph 50"><img src="../img/brickwell/thumb/brickwell-50.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="50" aria-label="Photograph 51"><img src="../img/brickwell/thumb/brickwell-51.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="51" aria-label="Photograph 52"><img src="../img/brickwell/thumb/brickwell-52.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="52" aria-label="Photograph 53"><img src="../img/brickwell/thumb/brickwell-53.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="53" aria-label="Photograph 54"><img src="../img/brickwell/thumb/brickwell-54.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="54" aria-label="Photograph 55"><img src="../img/brickwell/thumb/brickwell-55.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="55" aria-label="Photograph 56"><img src="../img/brickwell/thumb/brickwell-56.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="56" aria-label="Photograph 57"><img src="../img/brickwell/thumb/brickwell-57.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="57" aria-label="Photograph 58"><img src="../img/brickwell/thumb/brickwell-58.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="58" aria-label="Photograph 59"><img src="../img/brickwell/thumb/brickwell-59.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="59" aria-label="Photograph 60"><img src="../img/brickwell/thumb/brickwell-60.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="60" aria-label="Photograph 61"><img src="../img/brickwell/thumb/brickwell-61.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="61" aria-label="Photograph 62"><img src="../img/brickwell/thumb/brickwell-62.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="62" aria-label="Photograph 63"><img src="../img/brickwell/thumb/brickwell-63.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="63" aria-label="Photograph 64"><img src="../img/brickwell/thumb/brickwell-64.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="64" aria-label="Photograph 65"><img src="../img/brickwell/thumb/brickwell-65.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="65" aria-label="Photograph 66"><img src="../img/brickwell/thumb/brickwell-66.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="66" aria-label="Photograph 67"><img src="../img/brickwell/thumb/brickwell-67.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="67" aria-label="Photograph 68"><img src="../img/brickwell/thumb/brickwell-68.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="68" aria-label="Photograph 69"><img src="../img/brickwell/thumb/brickwell-69.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="69" aria-label="Photograph 70"><img src="../img/brickwell/thumb/brickwell-70.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="70" aria-label="Photograph 71"><img src="../img/brickwell/thumb/brickwell-71.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="71" aria-label="Photograph 72"><img src="../img/brickwell/thumb/brickwell-72.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="72" aria-label="Photograph 73"><img src="../img/brickwell/thumb/brickwell-73.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="73" aria-label="Photograph 74"><img src="../img/brickwell/thumb/brickwell-74.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="74" aria-label="Photograph 75"><img src="../img/brickwell/thumb/brickwell-75.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="75" aria-label="Photograph 76"><img src="../img/brickwell/thumb/brickwell-76.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="76" aria-label="Photograph 77"><img src="../img/brickwell/thumb/brickwell-77.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="77" aria-label="Photograph 78"><img src="../img/brickwell/thumb/brickwell-78.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="78" aria-label="Photograph 79"><img src="../img/brickwell/thumb/brickwell-79.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      <button type="button" data-go="79" aria-label="Photograph 80"><img src="../img/brickwell/thumb/brickwell-80.jpg" alt="" loading="lazy" width="120" height="80"></button>
+      </div>
+    </div>
+  </section>
 
   <section class="band" style="border-top:0">
     <div class="wrap two even">
@@ -93,8 +308,8 @@
         </ul>
       </div>
       <div>
-        <figure class="plate"><img src="../img/brickwell/brickwell-55.jpg" alt="The rear porch with a brick fireplace and a hot tub, looking out to the pool." loading="lazy"><figcaption>The rear porch: fireplace, hot tub, and the pool below.</figcaption></figure>
-        <figure class="plate" style="margin-top:clamp(14px,1.8vw,26px)"><img src="../img/brickwell/brickwell-22.jpg" alt="The entertaining room with a blue coffered ceiling, a bar, and a wall of built-ins." loading="lazy"><figcaption>The Men's Club.</figcaption></figure>
+        <figure class="plate"><img src="../img/brickwell/web/brickwell-55.jpg" alt="The rear porch with a brick fireplace and a hot tub, looking out to the pool." loading="lazy"><figcaption>The rear porch: fireplace, hot tub, and the pool below.</figcaption></figure>
+        <figure class="plate" style="margin-top:clamp(14px,1.8vw,26px)"><img src="../img/brickwell/web/brickwell-22.jpg" alt="The entertaining room with a coffered ceiling, a bar, and a wall of built-ins." loading="lazy"><figcaption>The Men's Club.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -122,16 +337,11 @@
         </aside>
       </div>
       <div>
-        <figure class="plate"><img src="../img/brickwell/brickwell-05.jpg" alt="The back of the house at dusk from across the saltwater pool, the porches lit." loading="lazy"><figcaption>The pool and the rear porches at dusk.</figcaption></figure>
-        <div class="trio" style="grid-template-columns:1fr 1fr;margin-top:clamp(14px,1.8vw,26px)">
-          <figure class="plate"><img src="../img/brickwell/brickwell-06.jpg" alt="The free-floating spiral staircase in the entry." loading="lazy"><figcaption>The stair.</figcaption></figure>
-          <figure class="plate"><img src="../img/brickwell/brickwell-15.jpg" alt="The renovated kitchen: a wide island with seating, white cabinetry, and a range hood." loading="lazy"><figcaption>The kitchen.</figcaption></figure>
-        </div>
-        <p class="footnote">Eleven of the listing's 80 photographs are on this page. The rest, at full size, are in the portfolio.</p>
+        <figure class="plate"><img src="../img/brickwell/web/brickwell-05.jpg" alt="The back of the house at dusk from across the saltwater pool, the porches lit." loading="lazy"><figcaption>The pool and the rear porches at dusk.</figcaption></figure>
+        <figure class="plate" style="margin-top:clamp(14px,1.8vw,26px)"><img src="../img/brickwell/web/brickwell-06.jpg" alt="The free-floating spiral staircase in the entry." loading="lazy"><figcaption>The stair.</figcaption></figure>
       </div>
     </div>
   </section>
-
 
   <section class="band">
     <div class="wrap">
@@ -154,7 +364,7 @@
           </dl>
         </aside>
       </div>
-      <figure class="plate wide" style="margin-top:clamp(30px,4vw,52px)"><img src="../img/brickwell/brickwell-66.jpg" alt="Two white chairs on the lawn at the edge of the pond, with the island beyond." loading="lazy"><figcaption>The pond, from the lawn.</figcaption></figure>
+      <figure class="plate wide" style="margin-top:clamp(30px,4vw,52px)"><img src="../img/brickwell/web/brickwell-66.jpg" alt="Two white chairs on the lawn at the edge of the pond, with the island beyond." loading="lazy"><figcaption>The pond, from the lawn.</figcaption></figure>
       <div class="linkrow">
         <a href="https://www.thelitchfieldcompany.com/index.php?advanced=1&amp;display=The%20Reserve&amp;areas%5B%5D=neighborhood:the%20reserve:sc&amp;beds=0&amp;baths=0&amp;min=0&amp;max=100000000">Everything for sale in The Reserve</a>
         <a href="https://www.thelitchfieldcompany.com/market-report.php">Market reports</a>
@@ -178,7 +388,7 @@
             <li>For buyers outside the United States, a one-page note from the firm's counsel on title, wiring, and withholding at resale</li>
           </ul>
         </div>
-        <div class="own">
+        <div>
           <h3 style="font-size:1.4rem;margin-bottom:12px">What it costs to own</h3>
           <aside class="parts"><dl>
             <div><dt>Dues</dt><dd>$437 a month: management, common areas, recreation facilities, and security</dd></div>
@@ -266,6 +476,42 @@
   </div>
 </footer>
 
+<script>
+/* The gallery: 80 photographs, loaded a few at a time. */
+(function(){
+  var stage=document.getElementById('stage'); if(!stage) return;
+  var frames=[].slice.call(stage.querySelectorAll('.frame')), n=frames.length;
+  var thumbs=[].slice.call(document.querySelectorAll('#strip button')), chaps=[].slice.call(document.querySelectorAll('.chapters button'));
+  var count=document.querySelector('[data-n]'), chEl=document.querySelector('[data-ch]');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var i=0, timer=null, paused=false, DWELL=6000;
+  function load(k){ var im=frames[k]&&frames[k].querySelector('img'); if(im&&im.dataset.src){ im.src=im.dataset.src; delete im.dataset.src; } }
+  function show(k,manual){
+    k=(k+n)%n; if(k===i&&frames[k].classList.contains('is-on')) return;
+    for(var d=-1; d<=2; d++) load(k+d<0?k+d+n:(k+d)%n);
+    frames[i].classList.remove('is-on'); frames[i].setAttribute('aria-hidden','true');
+    frames[k].classList.add('is-on'); frames[k].removeAttribute('aria-hidden'); i=k;
+    thumbs.forEach(function(t,j){ t.classList.toggle('is-on',j===k); });
+    var ch=frames[k].getAttribute('data-ch'); chaps.forEach(function(b){ b.classList.toggle('is-on',b.textContent.indexOf(ch)===0); });
+    if(count) count.textContent=k+1; if(chEl) chEl.textContent=ch;
+    var t=thumbs[k]; if(t&&t.scrollIntoView) t.scrollIntoView({block:'nearest',inline:'center',behavior:reduce?'auto':'smooth'});
+    if(manual) restart();
+  }
+  function tick(){ if(paused||document.hidden) return; show(i+1,false); }
+  function restart(){ if(timer) clearInterval(timer); timer=null; if(reduce) return; timer=setInterval(tick,DWELL); }
+  frames.forEach(function(f,k){ if(k!==0) f.setAttribute('aria-hidden','true'); });
+  [].forEach.call(stage.querySelectorAll('[data-step]'),function(b){ b.addEventListener('click',function(e){ e.stopPropagation(); show(i+parseInt(b.getAttribute('data-step'),10),true); }); });
+  thumbs.concat(chaps).forEach(function(b){ b.addEventListener('click',function(){ show(parseInt(b.getAttribute('data-go'),10),true); }); });
+  stage.addEventListener('mouseenter',function(){paused=true;}); stage.addEventListener('mouseleave',function(){paused=false;});
+  stage.addEventListener('keydown',function(e){ if(e.key==='ArrowLeft'){show(i-1,true);e.preventDefault();} if(e.key==='ArrowRight'){show(i+1,true);e.preventDefault();} });
+  var full=document.getElementById('thFull');
+  if(full){ if(!stage.requestFullscreen&&!stage.webkitRequestFullscreen) full.style.display='none';
+    full.addEventListener('click',function(){ if(document.fullscreenElement){ document.exitFullscreen(); } else if(stage.requestFullscreen){ stage.requestFullscreen(); } else if(stage.webkitRequestFullscreen){ stage.webkitRequestFullscreen(); } });
+    document.addEventListener('fullscreenchange',function(){ full.textContent=document.fullscreenElement?'Exit full screen':'Full screen'; }); }
+  thumbs[0].classList.add('is-on'); chaps[0].classList.add('is-on');
+  window.addEventListener('load',function(){ load(1); load(2); load(3); restart(); });
+})();
+</script>
 <script>
 /* Preview form: shows the confirmation state and sends nothing anywhere. */
 (function(){
